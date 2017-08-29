@@ -1,1 +1,87 @@
-hello world
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trio</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+
+        <style>
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
+
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .title {
+                font-size: 200px;
+            }
+
+            .company-name {
+                font-family: 微软雅黑;
+                font-size: 20px; 
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <!-- <div class="title">Trio</div> -->
+                <div class="dog"><img src="images/1.png" /></div>
+                <div class="company-name">Skkx Jbex</div>
+                <br>
+            </div>
+        </div>
+
+    </body>
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script>
+        // var flag = 1;
+
+        // function hh() {
+        //     if (flag == 1) {
+        //         flag = 0;
+        //         $("#haha").html('|');
+        //     }
+        //     else {
+        //         flag = 1;
+        //         $("#haha").html('');
+        //     }
+        // }
+
+        // setInterval(function(){
+        //     hh();
+        // }, 500);
+
+
+
+// --------------------------------------------------------
+
+
+        var flag = 1;
+        setInterval(function(){
+            var rusult = flag == 1 ? '|' : '';
+            flag *= -1;
+            $("#haha").html(rusult)
+        }, 500);
+        
+    </script>
+</html>
